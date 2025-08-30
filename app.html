@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome to Campus Bites</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #eef3fa;
+      color: #23395d;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .intro-header {
+      background: linear-gradient(120deg, #8bc6ec 0%, #25395e 100%);
+      height: 55vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 18px rgba(35, 57, 93, 0.1);
+      position: relative;
+    }
+    .intro-header .logo {
+      width: 110px;
+      height: 110px;
+      background: #fff;
+      border-radius: 18px;
+      margin-bottom: 14px;
+      box-shadow: 0 3px 20px rgba(35, 57, 93, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .intro-header .logo img {
+      width: 90px;
+      height: 90px;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+    .site-title {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 2.4rem;
+      color: #fff;
+      letter-spacing: 2px;
+      margin: 0.2em 0 0.15em 0;
+      text-shadow: 0 2px 14px rgba(35, 57, 93, 0.2);
+      text-align: center;
+    }
+    .intro-tagline {
+      font-size: 1.22rem;
+      font-style: italic;
+      color: #d8f0fc;
+      margin-bottom: 2em;
+      letter-spacing: 0.6px;
+      text-align: center;
+    }
+    .explore-btn {
+      padding: 0.7em 1.9em;
+      background: #8bc6ec;
+      color: #1c2e44;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 7px;
+      box-shadow: 0 2px 12px rgba(35, 57, 93, 0.12);
+      cursor: pointer;
+      transition: background 0.16s, color 0.16s, transform 0.13s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .explore-btn:hover {
+      background: #376da7;
+      color: #eef3fa;
+      transform: scale(1.04) translateY(-2px);
+    }
+    .info-section,
+    .about-section,
+    .contact-section {
+      max-width: 700px;
+      margin: 3rem auto 1rem auto;
+      padding: 1.7em 1.2em;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(35, 57, 93, 0.07);
+      text-align: center;
+      font-size: 1.09rem;
+      color: #25405b;
+      border: 1px solid #d6eafb;
+    }
+    .about-section h2,
+    .contact-section h2 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+      margin-bottom: 0.6em;
+      color: #23395d;
+    }
+    footer {
+      background: #25395e;
+      color: white;
+      text-align: center;
+      padding: 1.8em 1em;
+      margin-top: auto;
+    }
+    .social-icons {
+      margin-top: 1em;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+    }
+    .social-icons a {
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      transition: background 0.3s, color 0.3s;
+      text-decoration: none;
+    }
+    .social-icons a:hover {
+      background: #8bc6ec;
+      color: #25395e;
+    }
+    svg {
+      fill: currentColor;
+      width: 20px;
+      height: 20px;
+    }
+    @media (max-width: 600px) {
+      .site-title {
+        font-size: 1.19rem;
+      }
+      .info-section,
+      .about-section,
+      .contact-section {
+        font-size: 0.98rem;
+        padding: 1.5em 0.5em;
+      }
+      .intro-header {
+        height: 400px;
+        min-height: 275px;
+      }
+      .intro-header .logo {
+        width: 72px;
+        height: 72px;
+      }
+      .intro-header .logo img {
+        width: 60px;
+        height: 60px;
+      }
+      .explore-btn {
+        font-size: 1rem;
+        padding: 0.6em 1.5em;
+      }
+      .social-icons a {
+        width: 30px;
+        height: 30px;
+      }
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="intro-header">
+    <div class="logo">
+      <img src="bite.png" alt="Campus Bites Logo" />
+    </div>
+    <div class="site-title">Campus Bites – College Canteen</div>
+    <div class="intro-tagline">
+      Flavors. Friends. Freshness.<br />Your College Canteen Awaits!
+    </div>
+    <a class="explore-btn" href="cateen.html">Explore Menu</a>
+  </div>
+
+  <div class="info-section">
+    Welcome to Campus Bites – your on-campus destination for diverse, delicious, and affordable food. <br /><br />
+    Enjoy vibrant bites, a welcoming ambience, and the perfect place to connect with friends, study, or just relax.
+    <br /><br />
+    Start your journey by exploring our extensive menu packed with snacks, meals, desserts, and beverages to
+    fuel your campus life!
+  </div>
+
+  <div class="about-section">
+    <h2>About Campus Bites</h2>
+    <p>
+      Campus Bites has been serving students and faculty with fresh and tasty meals right in the heart of the campus.
+      We prioritize quality, affordability, and a cozy environment to make your breaks joyful and refreshing.
+    </p>
+  </div>
+
+  <div class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Email: contact@campusbites.com</p>
+    <p>Phone: +1 (555) 123-4567</p>
+    <p>Address: 123 Campus Avenue, College Town, USA</p>
+  </div>
+
+  <footer>
+    <p>Connect with us on social media!</p>
+    <div class="social-icons">
+      <a
+        href="https://www.youtube.com/channel/yourchannel"
+        target="_blank"
+        rel="noopener"
+        aria-label="YouTube"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path
+            d="M19.615 3.184c-1.691-.114-8.48-.114-10.172 0-2.22.15-3.797 1.755-3.91 4.282a36.2 36.2 0 000 5.068c.113 2.527 1.69 4.132 3.91 4.282 1.692.114 8.48.114 10.172 0 2.22-.15 3.797-1.755 3.91-4.282a36.2 36.2 0 000-5.068c-.113-2.527-1.69-4.132-3.91-4.282zM10 15.6V8.4l5.53 3.6-5.53 3.6z"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://twitter.com/yourprofile"
+        target="_blank"
+        rel="noopener"
+        aria-label="Twitter"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path
+            d="M22.46 6c-.77.35-1.6.6-2.46.7a4.28 4.28 0 001.88-2.37 8.59 8.59 0 01-2.72 1.03 4.27 4.27 0 00-7.3 3.89 12.12 12.12 0 01-8.8-4.45 4.27 4.27 0 001.32 5.7 4.25 4.25 0 01-1.93-.53v.05a4.27 4.27 0 003.43 4.19 4.3 4.3 0 01-1.92.07 4.27 4.27 0 003.98 2.97A8.57 8.57 0 012 19.54 12.07 12.07 0 008.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18-.01-.35-.02-.53A8.35 8.35 0 0022.46 6z"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://wa.me/15551234567"
+        target="_blank"
+        rel="noopener"
+        aria-label="WhatsApp"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path
+            d="M20.52 3.48a11.75 11.75 0 00-16.38 16.38l-1.96 5.65 5.84-1.92a11.75 11.75 0 0012.5-20.11zM12 19.18a7.22 7.22 0 01-3.71-1.02l-.27-.16-2.2.73.74-2.15-.17-.27a7.2 7.2 0 112.9 2.87zm3.2-3.42c-.17-.09-1-1.03-1.15-1.15s-.27-.14-.39.14-.45 1.15-.55 1.38-.2.21-.37.07a5.56 5.56 0 01-1.64-1.02c-.29-.28-.49-.62-.69-.9a.6.6 0 01.06-.87c.06-.05.11-.09.17-.13.07-.04.18-.09.27-.14s.13-.06.2-.1a1.27 1.27 0 00.46-.34.8.8 0 000-1.06c-.07-.12-.77-1.84-1.06-2.52-.28-.66-.56-.57-.77-.58-.2 0-.43-.01-.66-.01a1.17 1.17 0 00-.85.4 3.52 3.52 0 00-1.21 2.94 6.12 6.12 0 004.59 4.6 3.67 3.67 0 002.87-.62 2.52 2.52 0 00.77-1.32c.06-.14.05-.27.03-.3s-.14-.05-.31-.14z"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://instagram.com/yourprofile"
+        target="_blank"
+        rel="noopener"
+        aria-label="Instagram"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path
+            d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5a3.75 3.75 0 003.75-3.75v-8.5A3.75 3.75 0 0016.25 4h-8.5zm8.74 2.57a1.07 1.07 0 11-2.14 0 1.07 1.07 0 012.14 0zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z"
+          />
+        </svg>
+      </a>
+    </div>
+    <p style="margin-top: 1em; font-size: 0.9rem;">&copy; 2025 Campus Bites. All rights reserved.</p>
+  </footer>
+</body>
+</html>
